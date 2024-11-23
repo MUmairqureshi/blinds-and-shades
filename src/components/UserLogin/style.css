@@ -1,0 +1,12 @@
+
+.user_login_actionBth{
+    background-color: #FFA506 !important;
+    color: #fff;
+    margin: 12px 0px;
+}
+
+.lost_your_password{
+    color: #FFA506;
+    text-decoration: none;
+    font-size: 12px;
+}

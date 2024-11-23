@@ -1,0 +1,74 @@
+.mainLogoImg img {
+  height: 20px;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #4e4e4e;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffa506 !important;
+  text-transform: uppercase;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 1380px) {
+  .navbar-nav .nav-link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1199px) {
+  .navbar-nav {
+    gap: 3px;
+  }
+
+  .mainLogoImg img {
+    height: 17px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-nav {
+    gap: 3px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav-scroll {
+    max-height: fit-content !important;
+  }
+
+  .navbar-nav .nav-link {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .mainLogoImg img {
+    height: 14px;
+  }
+
+  .navbar-toggler {
+    border: 1px solid #c1c1c1 !important;
+    padding: 2px 7px !important;
+  }
+
+  .navbar-toggler-icon {
+    height: 26px !important;
+    width: 26px !important;
+  }
+}

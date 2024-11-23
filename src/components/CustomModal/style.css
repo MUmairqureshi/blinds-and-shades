@@ -1,0 +1,25 @@
+.modal-body svg {
+  color: var(--grayColor);
+  font-size: 5rem;
+  overflow: hidden;
+}
+.modal-body {
+  padding: 30px;
+}
+.closeButton {
+  border: none;
+  border-radius: 10px;
+  background: none;
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.modal-content {
+  border-radius: 10px;
+}
+.modalHeading {
+  margin-top: 10px;
+}

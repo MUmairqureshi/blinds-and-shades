@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'poppinsRegular';
+  src: url('./asserts/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsLight';
+  src: url('./asserts/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsMedium';
+  src: url('./asserts/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsbold';
+  src: url('./asserts/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'poppinsSemibold';
+  src: url('./asserts/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'RussoOne';
+  src: url('./asserts/fonts/RussoOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('./asserts/fonts/Jost-Light.ttf');
+}
+
+@font-face {
+  font-family: 'outfit';
+  src: url('./asserts/fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./asserts/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('./asserts/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('./asserts/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'MontserratExtraBold';
+  src: url('./asserts/fonts/Montserrat-ExtraBold.ttf');
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'RussoOne';
+  margin: 0;
+	padding: 0;
+}
+
+p, span, ul, a{
+  font-family: 'poppinsMedium';
+  margin: 0;
+	padding: 0;
+}
+
+
+.primaryHeading{
+  text-transform: uppercase;
+  font-size: 50px;
+  margin: 0px;
+}
+
+.secondary_heading{
+  text-transform: uppercase;
+  font-size: 38px;
+  margin: 0px;
+}
+
+.yellowActionBtn{
+  background-color: #FFA506 !important;
+  border: 1px solid #FFA506 !important;
+  color: #1B2E51;
+  transition: all 0.2s ease-in-out;
+}
+
+.yellowActionBtn:hover{
+  background-color: #1B2E51 !important;
+  border: 1px solid #FFA506 !important;
+  color: #FFA506;
+}
+
+@media(max-width: 768px){
+  .primaryHeading{
+    font-size: 36px;
+  }
+
+  .heroHeadingImg img{
+    height: 50px !important;
+  }
+}
+
+@media(max-width: 575px){
+  header{
+    padding: 0px 16px;
+  }
+
+  .primaryHeading {
+    font-size: 28px !important;
+  }
+}
+
+@media(max-width: 375px){
+  .primaryHeading {
+    font-size: 20px !important;
+  }
+}
+
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+

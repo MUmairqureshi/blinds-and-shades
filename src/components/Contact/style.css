@@ -1,0 +1,71 @@
+
+.contact_form_bk{
+    background-image: url("../../asserts/images/Group\ 1171276090.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+.contact_us_section{
+    padding: 40px 0px;
+}
+
+.contactBlueHeading{
+    color: #1B2E51 !important;
+}
+
+.contactSmallHeading{
+    font-size: 34px !important;
+}
+
+.contact_us_para{
+    font-family: 'Jost';
+    font-size: 14px;
+}
+
+.contact_secondary_heading{
+    font-family: 'RussoOne';
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1B2E51;
+}
+
+.main_contact_form{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 40px;
+}
+
+.custom_input{
+    height: 50px;
+    border: 1px solid #ddd !important;
+    border-radius: 0px !important;
+    margin-bottom: 24px !important;
+}
+
+.custom_input::placeholder{
+    color: #b7b7b7 !important;
+    font-size: 14px;
+}
+
+.contact_form_submit_actionBtn{
+    border-radius: 4px;
+    padding: 12px;
+}
+
+@media(max-width: 1024px){
+    .contactSmallHeading {
+        font-size: 22px !important;
+    }
+
+    .smaller_font{
+        font-size: 40px !important;
+    }
+}
+
+@media(max-width: 990px){
+    .main_contact_form{
+        margin-top: 20px;
+    }
+}

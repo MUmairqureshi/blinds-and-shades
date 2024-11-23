@@ -1,0 +1,40 @@
+
+
+.login_section{
+    padding: 60px 0px;
+    min-height: 60vh;
+}
+
+.user_login_btn{
+    border: none;
+    background-color: transparent;
+    color: #b9b9b9;
+}
+
+.buttonActive{
+    color: #e8dc3c;
+    border-bottom: 1px solid #e8dc3c;
+}
+
+.user_login_btn:focus{
+    color: #e8dc3c;
+    border-bottom: 1px solid #e8dc3c;
+}
+
+.login_register_actionBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.register_custom_input{
+    background-color: #f7efef !important;
+    height: 40px !important;
+}
+
+.login_label{
+    font-family: 'poppinsMedium';
+    font-size: 12px;
+    color: #686868;
+}

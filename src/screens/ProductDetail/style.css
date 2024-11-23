@@ -1,0 +1,616 @@
+.product_detail_section {
+  padding: 20px 0px 40px;
+}
+
+.product_single_image img {
+  border-radius: 14px;
+}
+
+.single_thumbnail_img {
+  height: 90px;
+  border-radius: 12px;
+}
+.selected-img-border {
+  border: 2px solid #1b2e51;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5px;
+}
+
+.title_with_circle {
+  font-size: 14px;
+}
+
+.product_detail_title {
+  font-size: 30px;
+}
+
+.eligible_discounts_title {
+  font-family: "poppinsbold";
+  font-size: 12px;
+  color: crimson;
+  margin: 0px;
+}
+
+.eligible_discount_percentage {
+  font-size: 12px;
+  color: crimson;
+  position: relative;
+  display: inline-block;
+}
+
+.red_circle {
+  height: 3px;
+  width: 3px;
+  background-color: crimson;
+  display: inline-block;
+  border-radius: 50%;
+  transform: translateY(-2px);
+  margin-right: 3px;
+}
+
+.eligible_discounts_terms {
+  padding-left: 12px;
+  font-size: 10px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.kid_friendly_title {
+  font-family: "poppinsbold";
+  font-size: 12px;
+  margin: 0px;
+  text-transform: uppercase;
+  color: #1b2e51;
+}
+
+.heart_with_questionmark img {
+  height: 23px !important;
+  width: auto !important;
+}
+
+.kid_friendly_para {
+  font-size: 14px;
+}
+
+.product_detail_accordian {
+  .accordion-item {
+    border-radius: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #000 !important;
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    font-family: "poppinsSemibold";
+    font-size: 18px;
+  }
+
+  .accordion-button[aria-expanded="true"] {
+    background-color: #1b2e51 !important;
+    color: #fff !important;
+  }
+
+  .accordion-button[aria-expanded="false"] {
+    color: #1b2e51 !important;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    filter: invert(100%);
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+}
+
+.free_sample_text {
+  /* font-family: 'Montserrat'; */
+  /* font-family: 'MontserratMedium'; */
+  font-family: "MontserratBold";
+  font-size: 14px;
+}
+
+.tip_circle {
+  display: flex;
+  background-color: #1a3050;
+  color: #fff;
+  font-weight: 100;
+  font-size: 10px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_with_img {
+  position: relative;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.input_with_img img {
+  border-radius: 16px;
+}
+
+.color_selection_input {
+  appearance: none !important;
+  height: 100% !important;
+  width: 100% !important;
+  border: 0px solid #000 !important;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 16px !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  margin: 0px !important;
+  background-image: none !important;
+}
+
+.color_selection_input:checked {
+  border: 2px solid #1b2e51 !important;
+  box-shadow: none !important;
+}
+
+.color_selection_input:checked::after {
+  content: "\f00c";
+  font-family: "fontawesome";
+  display: flex;
+  position: absolute;
+  right: -10px;
+  background-color: #1b2e51;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  top: -10px;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.all_color_selection_inputs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 18px 0px;
+}
+
+.selection_input_name {
+  font-family: "MontserratBold";
+  font-size: 11px;
+  text-align: center;
+  padding: 8px 0px 0px;
+  display: block;
+}
+
+.input_free_sample_text {
+  font-family: "MontserratBold";
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  border: 2px solid #1b2e51;
+  padding: 8px;
+  border-radius: 24px;
+  margin-top: 6px;
+}
+
+.mound_type {
+  font-size: 16px !important;
+}
+
+.window_size_img img {
+  height: 134px;
+  width: 134px;
+}
+
+.window_size_label {
+  font-family: "MontserratBold";
+  font-size: 13px;
+  display: block;
+}
+
+.window_first_box {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 18px 0px;
+}
+
+.help_me_measure {
+  border: 2px solid #42b3d5;
+  font-family: "poppinsMedium";
+  font-size: 12px;
+  padding: 4px 18px;
+  border-radius: 20px;
+}
+
+.window_size_selection {
+  width: 65px !important;
+  border: 1px solid #787878 !important;
+  font-size: 13px !important;
+  font-family: "Montserrat";
+}
+
+.gurantee_your_fit_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border: 1px solid #8ed1e6;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #8ed1e675;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.measuring_protection {
+  font-family: "poppinsMedium";
+  font-size: 13px;
+}
+
+.what_is_it_text {
+  font-family: "poppinsRegular";
+  font-size: 12px;
+}
+
+.room_name_selection {
+  width: 45% !important;
+  border: 1px solid #585858 !important;
+}
+
+.selection_with_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra_room_name {
+  width: 45%;
+}
+
+.extra_room_name input {
+  border: 1px solid #585858 !important;
+}
+
+.free_text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e3b6f;
+}
+
+.ten_percent_off_text {
+  background-color: #2e52a0;
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  padding: 6px;
+}
+
+.lift_style_selection {
+  border: 1px solid #717171 !important;
+}
+
+.coupon_title {
+  font-family: "MontserratExtraBold";
+  margin: 0px;
+  font-size: 20px;
+}
+
+.coupon_text {
+  font-family: "MontserratMedium";
+  font-size: 14px;
+}
+
+.coupon_terms {
+  display: block;
+  font-family: "Montserrat";
+  font-size: 13px;
+  padding-top: 4px;
+}
+
+.coupon_box {
+  border: 1px solid #8ed1e6;
+  background-color: #8ed1e675;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.coupon_box input {
+  border: 2px solid #000;
+}
+
+.coupon_discount_bold {
+  font-family: "MontserratExtraBold";
+  color: #1e3b6f;
+}
+
+.coupon_with_payment {
+  display: flex;
+  /* gap: 24px; */
+  justify-content: space-between;
+}
+
+.quantity_quote {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 55%;
+  padding: 20px;
+}
+
+.qty_text {
+  font-size: 14px;
+}
+
+.qty_text_selection {
+  font-size: 14px !important;
+  border: 1px solid #636363 !important;
+}
+
+.request_actionBtn {
+  font-family: "Montserrat";
+  background-color: #ffa506;
+  border: 1px solid #d1d1d0;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.interest_free {
+  font-family: "MontserratBold";
+  font-size: 8px;
+}
+
+.learn_more_about_interest {
+  font-family: "Montserrat";
+  font-size: 9px;
+}
+
+.paypalImg {
+  width: 45px;
+}
+
+.main_warranty_box {
+  width: 40%;
+  margin: 12px 0px;
+}
+
+.warranty_icon_img {
+  width: 16px;
+}
+
+.warranty_box_head {
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding-bottom: 6px;
+}
+
+.single_warranty_info {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  padding: 4px 0px;
+}
+
+.qty_with_selection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.accordian_below_product_details {
+  .accordion-item {
+    border-bottom: 1px solid #dbdbdb !important;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 0% !important;
+  }
+
+  .accordion-item:last-child {
+    border: none !important;
+  }
+
+  .accordion-button {
+    background-color: transparent !important;
+    font-family: "MontserratMedium";
+    color: #1e3b6f;
+    font-size: 20px;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+}
+
+.like_title {
+  color: #1b2e51 !important;
+  font-size: 24px !important;
+}
+
+.you_may_like_product_title {
+  font-family: "MontserratBold";
+  font-size: 15px;
+  line-height: 22px;
+  padding-top: 10px;
+  color: #000;
+  margin: 0px;
+}
+
+.like_products_discount {
+  color: #e00848;
+  font-family: "MontserratMedium";
+  font-size: 12px;
+}
+
+/* .you_may_like_product_title02{
+    font-family: 'MontserratBold';
+    font-size: 14px;
+    padding-top: 3px;
+    color: #000;
+    line-height: 20px;
+} */
+
+@media (max-width: 1400px) {
+  .single_thumbnail_img {
+    height: 80px;
+  }
+
+  .qty_with_selection {
+    gap: 10px;
+  }
+
+  .coupon_with_payment {
+    gap: 10px;
+  }
+
+  .quantity_quote {
+    width: 50%;
+  }
+
+  .main_warranty_box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .single_thumbnail_img {
+    height: 70px;
+  }
+
+  .free_sample_text {
+    font-size: 12px;
+  }
+
+  .quantity_quote {
+    width: 42%;
+  }
+
+  .request_actionBtn {
+    font-size: 12px;
+  }
+
+  .coupon_with_payment {
+    gap: 5px;
+  }
+
+  .main_warranty_box {
+    width: 50%;
+  }
+  .you_may_like_product_title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 990px) {
+  .single_thumbnail_img {
+    height: 80px;
+  }
+
+  .coupon_with_payment {
+    gap: 10px;
+  }
+
+  .coupon_box {
+    width: 50%;
+  }
+
+  .quantity_quote {
+    width: 50%;
+  }
+
+  .main_warranty_box {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .single_thumbnail_img {
+    height: 60px;
+  }
+
+  .main_warranty_box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 575px) {
+  .thumbnail-container {
+    overflow-y: scroll;
+    gap: 8px;
+  }
+
+  .single_thumbnail_img {
+    height: 70px;
+  }
+
+  .coupon_with_payment {
+    flex-wrap: wrap;
+  }
+
+  .coupon_box {
+    width: 100%;
+  }
+
+  .quantity_quote {
+    width: 100%;
+  }
+
+  .main_warranty_box {
+    width: 100%;
+  }
+
+  .warranty_box_head {
+    justify-content: center;
+  }
+
+  .single_warranty_info {
+    justify-content: center;
+  }
+}
+.window_size_img_border {
+  border: 2px solid #1b2e51;
+  border-radius: 10px;
+  padding: 10px;
+}
+@media (max-width: 425px) {
+  .window_size_img img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .you_may_like_product_title {
+    font-size: 12px;
+  }
+
+  .product_detail_accordian {
+    .accordion-button {
+      font-size: 14px;
+    }
+  }
+
+  .accordian_below_product_details {
+    .accordion-button {
+      background-color: transparent !important;
+      font-family: "MontserratMedium";
+      color: #1e3b6f;
+      font-size: 14px;
+    }
+  }
+}

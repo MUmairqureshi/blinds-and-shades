@@ -1,0 +1,42 @@
+.customBanner_section {
+  background-image: url("../../asserts/images/Group\ 1171276090.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.customBanner_main_box {
+  padding-top: 40px;
+}
+
+.customBanner_section {
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.customBannerHeading {
+  position: relative;
+}
+
+.heading_with_Img {
+  position: absolute;
+  right: 0;
+  top: -38px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .heading_with_Img {
+    top: -16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .customBanner_section {
+    padding-top: 34px;
+  }
+
+  .customBanner_main_box {
+    padding-top: 20px;
+  }
+}

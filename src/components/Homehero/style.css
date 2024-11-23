@@ -1,0 +1,108 @@
+
+
+.best_blinds_section{
+    background-image: url("../../asserts/images/Group\ 1171276090.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroHeadingImg img{
+    height: 65px;
+    border-radius: 40px;
+}
+
+.heroHeadingImg02 img{
+    height: 45px;
+}
+
+.heroHeadingImg03 img{
+    height: 30px;
+}
+
+.moving_text_further{
+    margin-left: 120px;
+}
+
+.font_yellow_color{
+    color: #FFA506 !important;
+}
+
+.welcome_para{
+    font-family: 'poppinsLight';
+    font-size: 14px;
+    padding-top: 10px;
+    color: #777777;
+    line-height: 32px;
+}
+
+
+.hero_section_imgs{
+    width: 100%;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.sunFlowerImg{
+    position: absolute;
+    top: -33px;
+    right: 28px;
+    z-index: 10;
+}
+
+.sunFlowerImg img{
+    height: 100px;
+}
+
+@media(max-width: 1200px){
+    .sunFlowerImg img{
+        height: 70px;
+    }
+}
+
+@media(max-width: 768px){
+    .hero_para {
+        padding-left: 20px !important;
+        line-height: 18px !important;
+    }
+
+    .moving_text_further{
+        margin-left: 0px !important;
+    }
+
+    .sunFlowerImg{
+        position: absolute;
+        top: -20px;
+        right: 28px;
+        z-index: 10;
+    }
+}
+
+@media(max-width: 600px){
+    .hero_para{
+        font-size: 10px !important;
+        padding-left: 10px !important;
+        line-height: 14px !important;
+    }
+
+    .heroHeadingImg02 img {
+        height: 32px !important;
+    }
+
+    .sunFlowerImg img{
+        height: 40px;
+    }
+
+    .heroHeadingImg img{
+        height: 36px !important;
+    }
+}
+
+@media(max-width: 425px){
+    .hero_para{
+        font-size: 7px !important;
+        padding-left: 10px !important;
+        line-height: 12px !important;
+    }
+}
+
+

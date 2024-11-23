@@ -1,0 +1,216 @@
+
+/* RangeSlider.css */
+@use 'sass:math';
+
+$input-c: #15b190 #f7c742 #b1154c;
+$track-w: 25em;
+$track-h: .375em;
+$thumb-d: 1.75em;
+$ruler-t: 1px;
+$ruler-l: .875em;
+
+@mixin reg-poly($n: 3, $oa: 90deg) {
+  $ba: 360deg / $n;
+  $vx: (
+  );
+
+@for $i from 0 to $n {
+  $ca: $i * $ba + $oa;
+  $vx: $vx, 50% * (1 + math.cos($ca)) 50% * (1 + math.sin($ca));
+}
+
+--poly: #{polygon($vx)};
+-webkit-clip-path: var(--poly);
+clip-path: var(--poly);
+}
+
+@mixin thumb() {
+  margin-top: -.2 * $thumb-d;
+  margin-left: -11px;
+
+  border: none;
+  width: $thumb-d;
+  height: $thumb-d;
+  background: currentcolor;
+  @include reg-poly;
+  cursor: ew-resize;
+}
+
+
+
+.myForm,
+.myForm * {
+  display: grid;
+}
+
+.myForm {
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+  position: relative;
+  top:-50px
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+ 
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+.js {
+  --js: 1;
+}
+
+datalist {
+  place-content: center;
+}
+
+
+
+.myForm,
+option {
+  // place-items: center;
+}
+
+.myForm {
+  --extra: 0;
+  --large: 0;
+  --not-large: calc(1 - var(--large));
+  --small: 0;
+  --not-small: calc(1 - var(--small));
+  --track-w: 100%;
+  // overflow-x: hidden;
+  // padding: .5 * $thumb-d;
+  background: hsla(0, 0%, 91%, var(--hl));
+  filter: grayScale(calc(1 - var(--hl, 0)));
+  transition: .35s;
+
+  // @media (min-width: $track-w + 2 * $thumb-d) { --extra: 1 }
+  @media (min-width: 320px) {
+    --large: 1
+  }
+
+  @media (max-width: 220px) {
+    --small: 1
+  }
+
+  &:focus-within,
+  &:hover {
+    --hl: 1
+  }
+}
+
+label {
+  font-size: 137.5%;
+}
+
+[for] {
+  font-weight: 700;
+}
+
+input {
+
+  &::-webkit-slider-runnable-track,
+  &::-webkit-slider-thumb,
+  & {
+    -webkit-appearance: none;
+  }
+
+  width: calc(var(--track-w) + #{$thumb-d});
+  background: transparent;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    @include thumb;
+  }
+
+  &::-moz-range-thumb {
+    @include thumb;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  +output {
+    --rng: calc(var(--max) - var(--min));
+    --pos: calc((var(--val) - var(--min)) / var(--rng) * var(--track-w));
+    display: var(--js, none);
+    grid-row: 2;
+    justify-self: start;
+    transform: translate(calc(.5 * #{$thumb-d} + var(--pos) - 50%));
+    counter-reset: val var(--val);
+
+    &::after {
+      content: counter(val);
+    }
+  }
+}
+
+datalist {
+  transform: translateX(--pos);
+  --track-u: calc(var(--track-w) / var(--n));
+  grid-auto-flow: column;
+  width: calc(var(--track-w) + #{$ruler-t});
+  box-shadow: inset 0 $ruler-t currentcolor;
+  background:
+    linear-gradient(90deg,
+      currentcolor $ruler-t, transparent 0) repeat-x;
+  background-size: calc(var(--track-u) / 5) calc(var(--extra) * .5 * #{$ruler-l});
+}
+
+option {
+  --m: calc(var(--large));
+  width: 17px;
+  transform-origin: 50% 0;
+  transform: scale(min(1, var(--m)));
+  transition: transform .35s;
+
+  // &:nth-child(odd) { --m: calc(var(--large) + 2 * var(--not-large) * var(--not-small)); }
+
+  // &:first-child, &:last-child { --m: calc(var(--large) + var(--not-large) * (2 * var(--not-small) + .5 * var(--n) * var(--small))); }
+
+  // &.mid { --m: calc(var(--large) + var(--not-large) * .5 * var(--n) * var(--small)); }
+
+
+}
+
+.smallest::before {
+  width: $ruler-t;
+  height: 10px;
+  background: currentcolor;
+  content: '';
+}
+
+.smaller::before {
+  width: $ruler-t+1;
+  height: 20px;
+  background: currentcolor;
+  content: '';
+}
+
+.medium::before {
+  width: $ruler-t+1;
+  height: 30px;
+  background: currentcolor;
+  content: '';
+}
+
+.largest::before {
+  width: $ruler-t+1;
+  height: 50px;
+  background: currentcolor;
+  content: '';
+}
